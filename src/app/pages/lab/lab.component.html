@@ -1,0 +1,9 @@
+<p>lab works!</p>
+<h1>{{ titulo }}</h1>
+<ul>
+  <li *ngFor="let task of tasks">{{ task }}</li>
+</ul>
+<hr/>
+<input type="text" [value]="name" /><br/>
+<button [disabled]="state">Click Me!</button>
+<img [src]="image" alt="">

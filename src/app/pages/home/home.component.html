@@ -1,0 +1,45 @@
+<div class="top-section">
+  <div class="top-container">
+    <h1 class="main-title">My Day</h1>
+    <h3 class="main-subtitle">All my tasks in one place</h3>
+    <input class="search-input" type="text" placeholder="Type new todo" />
+  </div>
+</div>
+<div class="bottom-section">
+  <div class="bottom-container">
+    <div class="tasks-container">
+      <ul class="task-list" *ngFor="let task of tasks()">
+        <li class="task">
+          <div class="task-container">
+            <input class="task-checkbox" type="checkbox" />
+            <p class="task-text">{{task}}</p>
+          </div>
+        </li>
+        <!-- <li class="task">
+          <div class="task-container">
+            <input class="task-checkbox" type="checkbox" />
+            <p class="task-text">Task description</p>
+          </div>
+        </li>
+        <li class="task">
+          <div class="task-container">
+            <input class="task-checkbox" type="checkbox" checked />
+            <p class="task-text completed">Task description</p>
+          </div>
+        </li>
+        <li class="task-edit">
+          <input class="updateTask-input" type="text" >
+        </li> -->
+      </ul>
+      <div class="tasks-container-footer">
+        <span class="task-counter">0 items left</span>
+        <div class="buttons-container">
+          <button class="showAll-btn selected">All</button>
+          <button class="showPending-btn">Pending</button>
+          <button class="showCompleted-btn">Completed</button>
+          <button class="clearCompleted-btn">Clear completed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
